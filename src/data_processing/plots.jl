@@ -151,7 +151,7 @@ function plot_num_of_cells_per_iterarion(tracer::Dict{Symbol, Any})
 
     fig = MK.Figure(resolution=(600, 400));
     axis_args = (xticksvisible=false, yticksvisible=false, xticklabelsize=14, yticklabelsize=14, xlabel="Iteration", ylabel="Num. cells",
-        xlabelpadding=0, ylabelpadding=0, font="Helvetica")
+        xlabelpadding=0, ylabelpadding=0, font="Nimbus Sans")
     fig[1, 1] = MK.Axis(fig; title="Convergence", axis_args...);
 
     for i in 1:size(n_components_per_iter, 1)
